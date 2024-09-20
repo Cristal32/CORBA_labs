@@ -1,0 +1,28 @@
+# Eclipse specific files
+.classpath
+.project
+.settings/
+bin/
+target/
+*.log
+*.tmp
+
+# Java specific files
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse IDE
+.metadata/
+*.iml
+
+# OS specific files
+.DS_Store          # macOS
+Thumbs.db         # Windows
+*.swp             # Vim swap files
+
+# IDE configuration files
+.idea/
+*.sublime-project
+*.sublime-workspace

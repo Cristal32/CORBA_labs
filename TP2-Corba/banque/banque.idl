@@ -1,0 +1,5 @@
+interface Compte { 
+	void lireMontant();
+	void crediter(in double montant);
+	void debiter(in double montant);
+};
