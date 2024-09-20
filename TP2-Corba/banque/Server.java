@@ -54,16 +54,16 @@ public class Server {
 			    PrintWriter out = new PrintWriter(file)) {
 			    out.println(ref);
 			    out.flush();  // Ensure data is written to the file
-			    System.out.println("Server waiting for client:\nref: " + ref);
+			    System.out.println("Serveur en attente d'un client:\n");
 			} catch (IOException e) {
-			    System.err.println("Error writing to file: " + e.getMessage());
+			    System.err.println("Erreur lors de l'ecriture du fichier: " + e.getMessage());
 			}
 		 
 		 try {
 			 manager.activate();
 			 orb.run();
 		 } catch(SystemException ex) {
-			 System.err.println(" -- CORBA error -- \n" + ex.getMessage());
+			 System.err.println(" -- Erreur CORBA -- \n" + ex.getMessage());
 			 ex.printStackTrace();
 			 return 1;
 		}

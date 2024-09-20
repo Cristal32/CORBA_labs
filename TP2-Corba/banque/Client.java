@@ -4,12 +4,10 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 import org.omg.CORBA.ORB;
 import org.omg.CORBA.SystemException;
-
-import hello.Hello;
-import hello.HelloHelper;
 
 public class Client {
 	public static void main(String args[]) {
@@ -45,7 +43,7 @@ public class Client {
 		 
 		 // Link to distant object
 		 String ref = null;
-		 String refFile = "Hello.ref";
+		 String refFile = "Compte.ref";
 		 FileInputStream file = new FileInputStream(refFile);
 		 BufferedReader in = new BufferedReader(new InputStreamReader(file));
 		 ref = in.readLine();
@@ -53,11 +51,43 @@ public class Client {
 
 		 obj = orb.string_to_object(ref);
 		 
-		 Hello hello = HelloHelper.narrow(obj);
+		 Compte compte = CompteHelper.narrow(obj);
 		 
 		 // Call operations
 		 try {
-			 hello.sayHello();
+			 Scanner scanner = new Scanner(System.in);
+			 int choice;
+			 
+			 System.out.println("+---------------------------+");
+             System.out.println("|      Service bancaire      |");
+             System.out.println("+---------------------------+");
+             System.out.println("1 : Lecture du montant du compte");
+             System.out.println("2 : Crédit du compte");
+             System.out.println("3 : Débit du compte");
+             System.out.println("0 : Quitter");
+             System.out.print("Taper le code de l'opération à effectuer : ");
+             
+			 do {
+				 choice = scanner.nextInt();
+				 
+				 switch (choice) {
+	                 case 1:
+	                	 compte.lireMontant();
+	                     break;
+	                 case 2:
+	                     System.out.print("Montant à créditer: ");
+	                     float credit = scanner.nextFloat();
+	                     compte.crediter(credit);
+	                     break;
+	                 case 3:
+	                     System.out.print("Montant à débiter: ");
+	                     float debit = scanner.nextFloat();
+	                     compte.debiter(debit);
+	                     break;
+	             }
+			 } while(choice != 0);
+			 scanner.close();
+			 
 		 } catch(SystemException ex) {
 			 System.err.println(" -- Erreur CORBA -- \n" + ex.getMessage());
 			 ex.printStackTrace();
