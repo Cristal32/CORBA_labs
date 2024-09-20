@@ -30,15 +30,15 @@ Choose the configurations depending on your own machine's characteristics.
 If you have Eclipse: <br />
 
 **3.1. Add the JDK to the installed JREs:** <br />
-Window > Preferences > Java > Installed JREs > Add > Standard VM > Next > Directory > Find and select your JDK folder > Finish > Check the newly added JDK to make it the default JDK for compilation (temporarily, you can always come back and undo that) > Apply and close.
+Window > Preferences > Java > `Installed JREs` > Add > Standard VM > Next > Directory > Find and select your JDK folder > Finish > Check the newly added JDK to make it the default JDK for compilation (temporarily, you can always come back and undo that) > Apply and close.
 
 **3.2. Add the JDK to your project's libray:** <br />
-Left click the project > Build path > Configure build path > Libraries > Add library > JRE System library > Next > Execution environment > JavaSE 1.8 > Finish > Apply and close.
+Left click the project > Build path > Configure build path > Libraries > Add library > `JRE System library` > Next > Execution environment > `JavaSE 1.8` > Finish > Apply and close.
 
 ### 4. Add the JDK to the environment variables
 
 **4.1.** Go to the location of the JDK folder, enter the `bin` folder, and copy the path in there. <br />
-**4.2.** Go to the `environment variables` > `Path` > `Edit` > `Add` > Paste the copied path there > Apply `Ok` for all tabs. <br />
+**4.2.** Go to the `environment variables` > Path > Edit > Add > Paste the copied path there > Apply Ok for all tabs. <br />
 **4.3.** To test if it all works fine, go to the command prompt and check the version of `idlj`:
 ```
 idlj -version
