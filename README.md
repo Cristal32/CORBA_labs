@@ -15,6 +15,7 @@ These labs use JDK 1.8 (Java 8), since CORBA classes are no longer available in 
     - [3. Implement the abstract object](#3-implement-the-abstract-object)
     - [4. Write and compile the server](#4-write-and-compile-the-server)
     - [5. Write and compile the client](#5-write-and-compile-the-client)
+ - [Results](#results)
 
 ## How to run the labs on your machine
 ### 1. Install JDK 1.8
@@ -72,3 +73,8 @@ public class HelloImpl extends HelloPOA {
 ### 4. Write and compile the server 
 
 ### 5. Write and compile the client
+
+## Results
+- TP1: [TP1](TP1-Corba/)
+- TP1: [TP2](TP2-Corba/)
+- TP3: Still in progress... :hourglass_flowing_sand:
