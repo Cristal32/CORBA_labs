@@ -1,14 +1,13 @@
 # TP2 - Lab 2
-## Objective: Conceve a bank application for managing an account
 
-In particular, it can do the following operations:
-- Read the value of the current amount
-- Credit by a specific sum
-- Debit by a specific sum
+**Objective:** Design, develop, and test a banking application that manages an account, particularly the following operations
 
-The client will communicate with the application via a menu allowing them to request any of these 3 operations.
+- Viewing the account balance,
+- Crediting the account,
+- Debiting the account.
 
-Server console:
+The client will interact with the application through the menu below, allowing them to perform these various operations consecutively. The CORBA objects will be - Implemented through inheritance.
+
 <table>
   <tr>
     <th>Client</th>
