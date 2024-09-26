@@ -4,7 +4,7 @@ These labs use JDK 1.8 (Java 8), since CORBA classes are no longer available in 
 
 ## Table of content
 
-- [How to run the labs on your machine:](#how-to-run-the-labs-on-your-machine)
+- [How to run the labs on your machine](#how-to-run-the-labs-on-your-machine)
     - [1. Install JDK 1.8](#1-install-jdk-18)
     - [2. Unzip the installed zip file](#2-unzip-the-installed-zip-file)
     - [3. Add the JDK to your project](#3-add-the-jdk-to-your-project)
@@ -15,6 +15,7 @@ These labs use JDK 1.8 (Java 8), since CORBA classes are no longer available in 
     - [3. Implement the abstract object](#3-implement-the-abstract-object)
     - [4. Write and compile the server](#4-write-and-compile-the-server)
     - [5. Write and compile the client](#5-write-and-compile-the-client)
+- [Perspectives](#perspectives)
 
 ## How to run the labs on your machine
 ### 1. Install JDK 1.8
