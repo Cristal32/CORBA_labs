@@ -11,7 +11,7 @@ The client will interact with the application via a menu that allows them to per
 One issue arises from this, CompteCourantRemunere inherits from both CompteCourant and CompteRemunere, which means multiple heritage, which isn't supported in Java!
 
 ## Delegation pattern
-If we don't want to change the class hierarchie, a possible solution is to use a `delegate` class or `tie` class, which implements or extends the necessary interfaces and/or abstract classes (called `skeletons`).
+If we don't want to change the class hierarchy, a possible solution is to use a `delegate` class or `tie` class, which implements or extends the necessary interfaces and/or abstract classes (called `skeletons`).
 
 ## Execution of IDLJ
 By altering the command that generates the necessary files from the IDL file:
