@@ -78,3 +78,6 @@ public class HelloImpl extends HelloPOA {
 - TP1: [TP1](TP1-Corba/)
 - TP1: [TP2](TP2-Corba/)
 - TP3: Still in progress... :hourglass_flowing_sand:
+
+## Perspectives
+- Test writing the client in another language (ex. C++) to communicate with the Java-written server
