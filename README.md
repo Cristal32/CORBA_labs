@@ -80,4 +80,5 @@ public class HelloImpl extends HelloPOA {
 - TP3: Still in progress... :hourglass_flowing_sand:
 
 ## Perspectives
-- Test writing the client in another language (ex. C++) to communicate with the Java-written server
+- In cases of exceptions, no message is printed.
+- Test writing the client in another language (ex. C++) to communicate with the Java-written server.
