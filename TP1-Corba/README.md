@@ -1,5 +1,6 @@
 # TP1 - Lab 1
-## Objective: Conceve the application Hello which prints "Hello Worlds!" on the server
+
+**Objective:** Design, develop, and test the hello application (a program that displays "hello" on the server).
 
 <table>
   <tr>
