@@ -56,6 +56,7 @@ interface Hello {
 ```
 
 ### 2. Compile the IDL file
+By compiling this file, it gnerates all the necessary classes for the CORBA app: 
 ```
 idlj -fall hello.idl
 ```
